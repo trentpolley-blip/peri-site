@@ -391,6 +391,76 @@ p { margin: 0; }
 }
 
 /* --------------------------------------------------------------------------
+   Legal pages (privacy)
+   -------------------------------------------------------------------------- */
+
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px var(--gutter) 88px;
+}
+
+.legal h1 {
+  font-size: clamp(2.25rem, 6.5vw, 2.9rem);
+  margin-bottom: 8px;
+}
+
+.legal__updated {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--dusk);
+  margin-bottom: 36px;
+}
+
+.legal__lead {
+  font-size: 1.08rem;
+  line-height: 1.68;
+  margin-bottom: 4px;
+}
+
+.legal__callout {
+  background: var(--card-gradient);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--clay);
+  border-radius: var(--radius-card);
+  padding: 20px 24px;
+  margin: 26px 0 8px;
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.legal h2 {
+  font-size: clamp(1.4rem, 4vw, 1.7rem);
+  margin: 42px 0 12px;
+}
+
+.legal p {
+  margin-bottom: 16px;
+  color: var(--night);
+  line-height: 1.68;
+}
+
+/* The lead-in phrase that opens several paragraphs. DM Sans 500 is the
+   heaviest weight we load, so this never renders faux bold. */
+.legal strong {
+  font-weight: 500;
+  color: var(--night);
+}
+
+.legal a {
+  color: var(--clay-dark);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 139, 114, 0.45);
+  padding-bottom: 1px;
+  transition: border-color 200ms ease;
+}
+.legal a:hover { border-bottom-color: var(--clay-dark); }
+
+@media (min-width: 700px) {
+  .legal { padding-top: 40px; }
+}
+
+/* --------------------------------------------------------------------------
    Tablet and up
    -------------------------------------------------------------------------- */
 

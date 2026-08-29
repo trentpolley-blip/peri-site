@@ -10,7 +10,7 @@
   ===========================================================================
 
   1. APP_STORE_URL   the App Store listing. Currently a placeholder.
-  2. PRIVACY_URL     the privacy policy page. Currently a placeholder.
+  2. PRIVACY_URL     set to privacy/ , the policy page in this repo.
   3. SUPPORT_EMAIL   the support address, used as a mailto link.
 
   They live in the <script id="peri-config"> block a few lines below, at the
@@ -20,7 +20,6 @@
   the page still works with JavaScript off. If you prefer, find and replace
   them directly:
       APP_STORE_URL_PLACEHOLDER
-      PRIVACY_URL_PLACEHOLDER
       SUPPORT_EMAIL_PLACEHOLDER
 
   ===========================================================================
@@ -73,7 +72,7 @@
      ---------------------------------------------------------------- */
 
   const APP_STORE_URL = 'https://apps.apple.com/app/id6760953284';
-  const PRIVACY_URL   = 'PRIVACY_URL_PLACEHOLDER';
+  const PRIVACY_URL   = 'privacy/';
   const SUPPORT_EMAIL = 'SUPPORT_EMAIL_PLACEHOLDER';
 
   /* ---------------------------------------------------------------- */
@@ -232,7 +231,7 @@
       <span class="wordmark__text">Peri</span>
     </a>
     <nav class="footer-links" aria-label="Footer">
-      <a href="PRIVACY_URL_PLACEHOLDER" data-privacy>Privacy Policy</a>
+      <a href="privacy/" data-privacy>Privacy Policy</a>
       <a href="mailto:SUPPORT_EMAIL_PLACEHOLDER" data-support>Support</a>
     </nav>
     <p class="copyright">&copy; 2026 Peri</p>
