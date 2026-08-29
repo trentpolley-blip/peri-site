@@ -6,21 +6,19 @@
 
 <!--
   ===========================================================================
-  EDIT THESE THREE THINGS. Nothing else on the page needs touching.
+  THE THREE LINKS. All set. Change them here if they ever move.
   ===========================================================================
 
-  1. APP_STORE_URL   the App Store listing. Currently a placeholder.
-  2. PRIVACY_URL     set to privacy/ , the policy page in this repo.
-  3. SUPPORT_EMAIL   the support address, used as a mailto link.
+  1. APP_STORE_URL   apps.apple.com/app/id6760953284 , the Hey Peri listing.
+                     404s until the app is approved, then works on its own.
+  2. PRIVACY_URL     privacy/ , the policy page in this repo.
+  3. SUPPORT_EMAIL   support@heyperi.app , a Cloudflare Email Routing
+                     address that forwards to a real inbox.
 
   They live in the <script id="peri-config"> block a few lines below, at the
   top of <body>. Change them there once and every link on the page updates.
-
-  The same placeholder strings are also written into the href attributes so
-  the page still works with JavaScript off. If you prefer, find and replace
-  them directly:
-      APP_STORE_URL_PLACEHOLDER
-      SUPPORT_EMAIL_PLACEHOLDER
+  The same values are also in the href attributes, so the page still works
+  with JavaScript off. Edit both if you change one.
 
   ===========================================================================
   SCREENSHOTS. Drop six PNGs into peri-web/assets/ with these exact names.
@@ -73,7 +71,7 @@
 
   const APP_STORE_URL = 'https://apps.apple.com/app/id6760953284';
   const PRIVACY_URL   = 'privacy/';
-  const SUPPORT_EMAIL = 'SUPPORT_EMAIL_PLACEHOLDER';
+  const SUPPORT_EMAIL = 'support@heyperi.app';
 
   /* ---------------------------------------------------------------- */
 </script>
@@ -232,7 +230,7 @@
     </a>
     <nav class="footer-links" aria-label="Footer">
       <a href="privacy/" data-privacy>Privacy Policy</a>
-      <a href="mailto:SUPPORT_EMAIL_PLACEHOLDER" data-support>Support</a>
+      <a href="mailto:support@heyperi.app" data-support>Support</a>
     </nav>
     <p class="copyright">&copy; 2026 Peri</p>
   </div>
