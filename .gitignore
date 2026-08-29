@@ -1,0 +1,6 @@
+.DS_Store
+
+# Full-resolution screenshots, kept on disk as the source of truth.
+# The deployed site uses the 640px versions in assets/, so these stay
+# out of git and off the host.
+assets/originals/
