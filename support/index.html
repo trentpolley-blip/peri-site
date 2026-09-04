@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  Support page. Served at https://heyperi.app/support/
+
+  This is the URL Apple asks for under App Information, Support URL.
+
+  The crisis resources block is deliberately the first thing on the page,
+  above the contact details and the questions. Someone who needs it should
+  not have to scroll or read anything else first. Do not move it down.
+
+  Phone numbers and shortcodes are US. If Peri ships outside the US, add
+  the local equivalents rather than replacing these.
+-->
+
+<title>Support, Peri</title>
+<meta name="description" content="Get help with Peri. Contact us, find answers to common questions, and reach crisis support if you need someone right now.">
+
+<link rel="icon" href="../assets/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Support, Peri">
+<meta property="og:description" content="Get help with Peri, and find crisis support if you need someone right now.">
+<meta name="theme-color" content="#FAF6F1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=DM+Mono:wght@300&family=DM+Sans:opsz,wght@9..40,300;9..40,500&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<script id="peri-config">
+  /* Same constant as the other pages. Keep them in sync. */
+  const SUPPORT_EMAIL = 'support@heyperi.app';
+</script>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="../" aria-label="Peri, home">
+    <img class="wordmark__icon" src="../assets/icon.png" alt="" width="36" height="36">
+    <span class="wordmark__text">Peri</span>
+  </a>
+  <a class="header-link" href="../">Back to Peri</a>
+</header>
+
+<main class="legal" id="main">
+
+  <h1>Support</h1>
+  <p class="legal__updated">Peri &middot; We read every email that comes in</p>
+
+  <!-- Crisis first. Never move this below the fold. -->
+  <section class="crisis" aria-labelledby="crisis-heading">
+    <h2 id="crisis-heading">If you need someone right now</h2>
+    <p class="crisis__intro">Peri is not an emergency service and no one is watching your messages in real time. If you are in danger or thinking about hurting yourself, please reach one of these instead. They are free, open all night, and answered by people.</p>
+    <ul class="crisis__list">
+      <li>
+        <span class="crisis__label">Call or text</span>
+        <span class="crisis__number">988</span>
+        <span class="crisis__note">Suicide and Crisis Lifeline, 24 hours a day in the US</span>
+      </li>
+      <li>
+        <span class="crisis__label">Text HOME to</span>
+        <span class="crisis__number">741741</span>
+        <span class="crisis__note">Crisis Text Line, if talking out loud feels like too much</span>
+      </li>
+      <li>
+        <span class="crisis__label">Call or text</span>
+        <span class="crisis__number">1&#8209;800&#8209;944&#8209;4773</span>
+        <span class="crisis__note">Postpartum Support International, for new and expecting parents. Text in Spanish: 971&#8209;203&#8209;7773</span>
+      </li>
+    </ul>
+    <p class="crisis__foot">If someone is in immediate danger, call 911.</p>
+  </section>
+
+  <h2>Getting help with the app</h2>
+  <p>Email <a href="mailto:support@heyperi.app" data-support>support@heyperi.app</a> and tell us what happened. If something looks wrong in the app, a screenshot helps a lot. You will usually hear back within a couple of days.</p>
+  <p>Peri is made by a very small team, so replies come from a person, not a ticket system.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>Peri is not showing my sleep or steps</h3>
+  <p>Peri reads sleep and activity from Apple Health, and it needs permission first. Open the Health app, go to Sharing, then Apps and Services, find Peri, and check that the categories you want are turned on. Sleep and step data can take a day to appear after you first connect, because Peri looks at patterns over time rather than a single night.</p>
+  <p>If your phone has not recorded any sleep, there is nothing for Peri to read. Sleep tracking usually comes from an Apple Watch or from another app writing into Apple Health.</p>
+
+  <h3>My morning brief did not arrive</h3>
+  <p>Briefs are sent as a notification at the time you picked. Check that notifications are turned on for Peri in your iPhone Settings. If you have not opened Peri in a while, briefs slow down to every few days, and they pick back up once you check in again.</p>
+
+  <h3>How do I change when my brief arrives?</h3>
+  <p>Open Peri, go to your profile, and change your check-in time. The next brief follows the new time.</p>
+
+  <h3>How do I share something with my doctor or midwife?</h3>
+  <p>The Report tab builds a summary you can save as a PDF and send on. Nothing is shared unless you choose to share it.</p>
+
+  <h3>How do I delete my account and everything in it?</h3>
+  <p>You can delete your account from inside Peri, in settings. Your data is removed right away, and any copies in our backups are purged within 30 days. If you cannot get into the app, email us and we will do it for you.</p>
+  <p>You can also ask for a copy of everything we have stored about you. Our <a href="../privacy/">privacy policy</a> covers what we keep and why.</p>
+
+  <h3>Can I turn off Apple Health access later?</h3>
+  <p>Yes, any time, in the Health app under Sharing. Peri only ever reads from Apple Health. It never writes to it.</p>
+
+  <h3>Is Peri a medical service?</h3>
+  <p>No. Peri is a wellness tool. It does not diagnose or treat any condition, and it is not a replacement for care from a doctor, midwife, or therapist. If something in the app worries you, please bring it to your provider. If you are in crisis, use the numbers at the top of this page.</p>
+
+  <h3>Who can see what I write in Peri?</h3>
+  <p>Only you. No other user can reach your records. The <a href="../privacy/">privacy policy</a> has the full detail.</p>
+
+  <h2>Still stuck?</h2>
+  <p>Email <a href="mailto:support@heyperi.app" data-support>support@heyperi.app</a>. Tell us what you were doing, what you expected, and what happened instead. That is usually enough for us to work it out.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <a class="wordmark wordmark--dark" href="../" aria-label="Peri, home">
+      <img class="wordmark__icon" src="../assets/icon.png" alt="" width="32" height="32" loading="lazy">
+      <span class="wordmark__text">Peri</span>
+    </a>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="mailto:support@heyperi.app" data-support>Email us</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Peri</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    if (typeof SUPPORT_EMAIL !== 'string') return;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-support]'), function (el) {
+      el.setAttribute('href', 'mailto:' + SUPPORT_EMAIL);
+      if (el.textContent.indexOf('@') !== -1) el.textContent = SUPPORT_EMAIL;
+    });
+  })();
+</script>
+
+</body>
+</html>

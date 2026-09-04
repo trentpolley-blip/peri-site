@@ -461,6 +461,95 @@ p { margin: 0; }
 }
 
 /* --------------------------------------------------------------------------
+   Support page: crisis block and question headings
+   -------------------------------------------------------------------------- */
+
+/* Night surface so it separates from the page at a glance. Someone
+   scanning in a bad moment finds it without reading anything else. */
+.crisis {
+  background: var(--night);
+  color: var(--cream);
+  border-radius: var(--radius-card);
+  padding: 28px 24px 24px;
+  margin: 8px 0 44px;
+}
+
+.crisis h2 {
+  color: var(--cream);
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 4.5vw, 1.85rem);
+}
+
+.crisis p.crisis__intro {
+  color: rgba(250, 246, 241, 0.74);
+  font-size: 0.97rem;
+  line-height: 1.62;
+  margin-bottom: 22px;
+}
+
+.crisis__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.crisis__list li {
+  border-top: 1px solid rgba(250, 246, 241, 0.16);
+  padding-top: 16px;
+}
+
+.crisis__label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clay);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Mono, because these are numbers to read carefully and dial. */
+.crisis__number {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+  line-height: 1.2;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+
+.crisis__note {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(250, 246, 241, 0.66);
+}
+
+.crisis p.crisis__foot {
+  margin: 22px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(250, 246, 241, 0.16);
+  font-size: 0.9rem;
+  color: rgba(250, 246, 241, 0.74);
+}
+
+/* Question headings sit a step below the section headings. */
+.legal h3 {
+  font-size: clamp(1.15rem, 3.4vw, 1.3rem);
+  margin: 30px 0 8px;
+}
+
+@media (min-width: 700px) {
+  .crisis { padding: 34px 32px 30px; }
+  .crisis__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* --------------------------------------------------------------------------
    Tablet and up
    -------------------------------------------------------------------------- */
 
